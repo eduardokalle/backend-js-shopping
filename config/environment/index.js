@@ -30,7 +30,8 @@ const all = {
 
     mongo: {
 
-        uri: process.env.MONGO_URI || 'mongodb+srv://kalle:Abc123456*@cluster0-zques.mongodb.net/test?retryWrites=true&w=majority',
+        uri: process.env.MONGO_URI || 'mongodb://kalle:Abc123456*@cluster0-shard-00-00-zques.mongodb.net:27017,cluster0-shard-00-01-zques.mongodb.net:27017,cluster0-shard-00-02-zques.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority',
+
         db: 'workshop-fullstack-js',
 
     }
